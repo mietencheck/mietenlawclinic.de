@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mieten Law Clinic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a18;
+      --paper: #f5f2eb;
+      --accent: #b5401e;
+      --muted: #8a8778;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 560px;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .rule {
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .status {
+      font-size: 0.9rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .status::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      border-top: 1px solid #d8d4c8;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid #d8d4c8;
+      text-decoration: none;
+      color: var(--ink);
+      transition: color 0.2s;
+    }
+
+    .link-item:hover {
+      color: var(--accent);
+    }
+
+    .link-item:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    .link-label {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .link-sub {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    .arrow {
+      font-size: 1.1rem;
+      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.75rem;
+      color: #b0ad9e;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rule"></div>
+    <h1>Mieten<br>Law Clinic</h1>
+    <p class="status">Befindet sich im Aufbau</p>
+
+    <nav class="links">
+      <a href="https://www.jura.fu-berlin.de/fachbereich/einrichtungen/zivilrecht/lehrende/roedlf/Mieten-Law-Clinic/index.html" class="link-item" target="_blank">
+        <div>
+          <div class="link-label">Mehr erfahren über die Mieten Law Clinic</div>
+          <div class="link-sub">Bei unserem Partner der Freien Universität</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a href="https://www.mietencheck.de" class="link-item" target="_blank">
+        <div>
+          <div class="link-label">Prüfe deine Miete</div>
+          <div class="link-sub">MietenCheck</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </nav>
+
+    <footer>
+      © 2025 Mieten Law Clinic<br><br>
+      <strong style="color: #8a8778; font-weight: 400;">Impressum</strong><br>
+      Mieten Law Clinic e. V.<br>
+      Van't-Hoff-Straße 8, Raum 314<br>
+      14195 Berlin
+    </footer>
+  </div>
+</body>
+</html>
