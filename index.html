@@ -3,173 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mieten Law Clinic</title>
+  <title>Mieten Law Clinic – Berlin</title>
+  <meta name="description" content="Kostenlose Beratung zu Miethöhe und Mietpreisrecht in Berlin. Ehrenamtlich, gemeinnützig, unabhängig.">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --ink: #1a1a18;
-      --paper: #f5f2eb;
-      --accent: #b5401e;
-      --muted: #8a8778;
-    }
-
-    body {
-      background: var(--paper);
-      color: var(--ink);
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 300;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-    }
-
-    .container {
-      max-width: 560px;
-      width: 100%;
-      opacity: 0;
-      transform: translateY(18px);
-      animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
-    }
-
-    @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .rule {
-      width: 40px;
-      height: 2px;
-      background: var(--accent);
-      margin-bottom: 2rem;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 2.8rem);
-      font-weight: 400;
-      letter-spacing: -0.01em;
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
-    }
-
-    .status {
-      font-size: 0.9rem;
-      color: var(--muted);
-      letter-spacing: 0.04em;
-      margin-bottom: 3rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .status::before {
-      content: '';
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-      border-top: 1px solid #d8d4c8;
-    }
-
-    .link-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.25rem 0;
-      border-bottom: 1px solid #d8d4c8;
-      text-decoration: none;
-      color: var(--ink);
-      transition: color 0.2s;
-    }
-
-    .link-item:hover {
-      color: var(--accent);
-    }
-
-    .link-item:hover .arrow {
-      transform: translateX(4px);
-    }
-
-    .link-label {
-      font-size: 1rem;
-      font-weight: 400;
-    }
-
-    .link-sub {
-      font-size: 0.78rem;
-      color: var(--muted);
-      margin-top: 0.2rem;
-    }
-
-    .arrow {
-      font-size: 1.1rem;
-      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-      flex-shrink: 0;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.75rem;
-      color: #b0ad9e;
-      text-align: center;
-      letter-spacing: 0.03em;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="container">
-    <div class="rule"></div>
-    <h1>Mieten<br>Law Clinic</h1>
-    <p class="status">Befindet sich im Aufbau</p>
+<body class="page-home">
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
-    <nav class="links">
-      <a href="https://www.jura.fu-berlin.de/fachbereich/einrichtungen/zivilrecht/lehrende/roedlf/Mieten-Law-Clinic/index.html" class="link-item" target="_blank">
-        <div>
-          <div class="link-label">Mehr erfahren über die Mieten Law Clinic</div>
-          <div class="link-sub">Bei unserem Partner der Freien Universität</div>
-        </div>
-        <span class="arrow">→</span>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-logo" href="index.html">
+        <img src="public/images/milc-logo-red.svg" alt="Mieten Law Clinic" class="logo-dark" width="88" height="36">
       </a>
-      <a href="https://www.mietencheck.de" class="link-item" target="_blank">
-        <div>
-          <div class="link-label">Prüfe deine Miete</div>
-          <div class="link-sub">MietenCheck</div>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-      <a href="mailto:kontakt@mietenlawclinic.de" class="link-item" target="_blank">
-        <div>
-          <div class="link-label">Kontakt</div>
-          <div class="link-sub">kontakt@mietenlawclinic.de</div>
-        </div>
-        <span class="arrow">→</span>
-      </a>
-    </nav>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="navbar/beratung.html">Beratung</a>
+        <a href="navbar/ausbildung.html">Ausbildung</a>
+        <a href="navbar/ueber-uns.html">Über uns</a>
+        <a href="navbar/mitmachen.html">Mitmachen</a>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-      © 2025 Mieten Law Clinic<br><br>
-      <strong style="color: #8a8778; font-weight: 400;">Impressum</strong><br>
-      Mieten Law Clinic e. V.<br>
-      Van't-Hoff-Straße 8, Raum 314<br>
-      14195 Berlin
+  <section class="hero-fullscreen" aria-label="Einstieg">
+    <div class="hero-inner">
+      <h1> Berlin, wir setzen dein Recht <br> auf faire Mieten durch.</h1>
+      <p class="lead">Lass dich kostenlos von unseren ehrenamtlichen Berater:innen zu deiner Miethöhe aufklären.</p>
+      <div class="hero-buttons">
+        <a class="hero-btn hero-btn--primary" href="https://www.mietencheck.de" target="_blank" rel="noopener">Miete prüfen mit mietencheck.de</a>
+        <a class="hero-btn hero-btn--secondary" href="navbar/beratung.html">Wie reiche ich meinen Fall ein?</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="landing-scroll" id="inhalt">
+    <main class="page">
+      <div class="content-block">
+        <h2>Unsere Vision</h2>
+        <p>Mieter:innen sollen ihre Rechte durchsetzen. Dafür möchten wir so unkompliziert wie möglich Berliner:innen informieren, wie hoch ihre Miete maximal sein darf. Wir wissen, dass eine Auseinandersetzung mit Vermieter:innen bei vielen Ängste auslöst und mit Vorurteilen verbunden ist. Wir wollen Mieter:innen ermutigen, aufklären und unterstützen auf ihrem Weg zu einer legalen Miete. Das machen wir ohne eigenes Profitinteresse, sondern durch ehrenamtliches Engagement.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Unterstütze uns</h2>
+        <p>Du kannst uns mit einer Spende unterstützen, damit wir unser Bildungsangebot weiter aufrecht erhalten können, <a href="navbar/mitmachen.html#foerdermitglied">Fördermitglied</a> werden oder bei uns <a href="navbar/mitmachen.html">mitmachen</a>. Zum Mitmachen schreib uns einfach eine E-Mail an <a href="mailto:kontakt@mietenlawclinic.de">kontakt@mietenlawclinic.de</a>.</p>
+        <p class="bank">
+          Spenden an unseren gemeinnützigen Verein:<br>
+          Mieten Law Clinic Berlin e.V.<br>
+          IBAN DE45 8306 5408 0006 8993 31<br>
+          BIC GENODEF1SLR
+        </p>
+      </div>
+    </main>
+
+    <section class="trust-section" aria-label="Kooperationspartner">
+      <div class="trust-section-inner">
+        <a href="https://www.jura.fu-berlin.de/fachbereich/einrichtungen/zivilrecht/lehrende/roedlf/index.html" target="_blank" rel="noopener">
+          <img src="public/images/logo-fu.png" alt="Freie Universität Berlin">
+        </a>
+        <a href="https://www.berliner-mieterverein.de/" target="_blank" rel="noopener">
+          <img src="public/images/logo-bmv.png" alt="Berliner Mieterverein">
+        </a>
+        <a href="https://movement-hub.org/" target="_blank" rel="noopener">
+          <img src="public/images/logo-movementhub.png" alt="Movement Hub">
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <nav aria-label="Footer">
+          <a href="mailto:kontakt@mietenlawclinic.de">kontakt@mietenlawclinic.de</a>
+          <a href="https://www.instagram.com/mietenlawclinic/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="footer/barrierefreiheit.html">Barrierefreiheit</a>
+          <a href="footer/datenschutz.html">Datenschutz</a>
+          <a href="footer/impressum.html">Impressum</a>
+        </nav>
+      </div>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
