@@ -495,50 +495,49 @@ a:hover { color: var(--brand-red); text-decoration: none; }
   left: 0;
   right: 0;
   height: 3px;
+  background: var(--brand-blue);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
-.ways-card--berater::after { background: var(--brand-red); }
-.ways-card--foerder::after { background: var(--brand-blue); }
-.ways-card--verein::after { background: var(--brand-blue); }
-.ways-card--spenden::after { background: var(--brand-red); }
-
 .ways-card:hover,
 .ways-card:focus-visible {
   transform: translateY(-3px);
+  border-color: rgba(0, 159, 227, 0.35);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
   text-decoration: none;
   outline: none;
 }
-
-.ways-card--berater:hover,
-.ways-card--berater:focus-visible { border-color: rgba(227, 6, 19, 0.35); }
-.ways-card--foerder:hover,
-.ways-card--foerder:focus-visible { border-color: rgba(0, 159, 227, 0.35); }
-.ways-card--verein:hover,
-.ways-card--verein:focus-visible { border-color: rgba(0, 159, 227, 0.35); }
-.ways-card--spenden:hover,
-.ways-card--spenden:focus-visible { border-color: rgba(227, 6, 19, 0.35); }
 
 .ways-card:hover::after,
 .ways-card:focus-visible::after {
   transform: scaleX(1);
 }
 
-.ways-card-number {
-  font-family: var(--font-display);
-  font-size: 1.75rem;
-  line-height: 1;
-  color: var(--line);
-  margin-bottom: 0.75rem;
-  transition: color 0.25s ease;
+.ways-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  margin-bottom: 0.85rem;
+  color: var(--brand-blue);
+  background: rgba(0, 159, 227, 0.08);
+  border: 1px solid rgba(0, 159, 227, 0.25);
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
-.ways-card:hover .ways-card-number,
-.ways-card:focus-visible .ways-card-number {
-  color: var(--brand-blue);
+.ways-card-icon svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.ways-card:hover .ways-card-icon,
+.ways-card:focus-visible .ways-card-icon {
+  background: var(--brand-blue);
+  color: #fff;
 }
 
 .ways-card-title {
