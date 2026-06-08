@@ -1,0 +1,61 @@
+/*
+ * Font configuration — switch active / previous setup here.
+ *
+ * Ronzino (active): self-hosted below, no Google Fonts link needed in HTML.
+ *
+ * Previous fonts (DM Sans + Playfair Display):
+ * 1. Uncomment the @import and :root block at the bottom of this file
+ * 2. Comment out the Ronzino @font-face rules and Ronzino :root block
+ * 3. In each HTML file, swap the font.css link for:
+ *    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+ */
+
+/* —— Ronzino (active) —— */
+
+@font-face {
+  font-family: 'Ronzino';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../public/assets/fonts/Ronzino-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ronzino';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../public/assets/fonts/Ronzino-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ronzino';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../public/assets/fonts/Ronzino-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ronzino';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../public/assets/fonts/Ronzino-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --font-body: 'Ronzino', sans-serif;
+  --font-display: 'Ronzino', sans-serif;
+}
+
+/* —— Previous fonts (commented out) —— */
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400&display=swap');
+
+:root {
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+*/

@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ausbildung – Mieten Law Clinic</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../style/font.css">
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
-<body>
+<body class="page-ausbildung">
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
   <header class="site-header">
     <div class="site-header-inner">
       <a class="site-logo" href="../index.html">
-        <img src="../public/images/milc-logo-red.svg" alt="Mieten Law Clinic" class="logo-dark" width="88" height="36">
+        <img src="../public/assets/logos/mietenlawclinic-logo.svg" alt="Mieten Law Clinic" class="logo-dark" width="88" height="36">
       </a>
       <nav class="site-nav" aria-label="Hauptnavigation">
         <a href="beratung.html">Beratung</a>
@@ -24,19 +24,39 @@
     </div>
   </header>
 
-  <main class="page" id="inhalt">
-    <div class="rule"></div>
-    <h1>Ausbildung</h1>
-    <nav class="page-nav" aria-label="Seiteninhalt">
-      <a href="#theorie" class="page-nav-badge">Theorie</a>
-      <a href="#praxis" class="page-nav-badge">Praxis</a>
-      <a href="#supervision" class="page-nav-badge">Supervision</a>
-    </nav>
+  <section class="hero-page" aria-label="Ausbildung im Überblick">
+    <div class="hero-page-inner">
+      <div class="rule"></div>
+      <h1>Ausbildung</h1>
+      <p class="hero-page-lead">In drei aufeinander aufbauenden Phasen wirst du zur Berater:in — von den Grundlagen bis zur selbstständigen Fallarbeit unter Supervision.</p>
 
+      <div class="process-pipeline">
+        <a href="#theorie" class="process-pipeline-step">
+          <span class="process-pipeline-number">1</span>
+          <h2 class="process-pipeline-title">Theorie</h2>
+          <p class="process-pipeline-text">Mietrecht, Beratungsmethodik und Schriftsätze in einem Semester.</p>
+        </a>
+        <span class="process-pipeline-arrow" aria-hidden="true">→</span>
+        <a href="#praxis" class="process-pipeline-step">
+          <span class="process-pipeline-number">2</span>
+          <h2 class="process-pipeline-title">Praxis</h2>
+          <p class="process-pipeline-text">Echte Fälle bearbeiten — vom Mietencheck bis zum Musterschreiben.</p>
+        </a>
+        <span class="process-pipeline-arrow" aria-hidden="true">→</span>
+        <a href="#supervision" class="process-pipeline-step">
+          <span class="process-pipeline-number">3</span>
+          <h2 class="process-pipeline-title">Supervision</h2>
+          <p class="process-pipeline-text">Fortlaufende Beratung im Team nach dem Vier-Augen-Prinzip.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="page" id="inhalt">
     <div class="content-block" id="theorie">
       <h2>Theorie</h2>
       <p>Die Ausbildung beginnt mit einem Semester Theorie. In dieser Phase erarbeitest du dir zunächst fundierte Grundlagen im Mietrecht mit Schwerpunkt auf zulässiger Miethöhe, Mietpreisbremse, Modernisierung und typischen Vertragsgestaltungen. Ergänzend lernst du Beratungsmethodik, strukturierte Datenerhebung und -prüfung, sowie das Verfassen von Schriftsätzen. Der Theorieteil wird durch ein Praktikum bzw. Hospitationen bei einer unserer Mietrechtsanwält:innen oder einer Beratungsstelle ergänzt und abgeschlossen. Dadurch soll ein konkreter Einblick in die praktische Beratungsarbeit gewonnen werden. Ziel ist es, eine realistische Vorstellung davon zu entwickeln, wie mietrechtliche Beratungsgespräche geführt werden und welche Anforderungen die Beratungspraxis mit sich bringt.</p>
-      <p>Die inhaltlichen Schwerpunkte und Termine findest du in unserem <a href="https://www.fu-berlin.de/vv/de/lv/1008109?m=235022&amp;pc=248984&amp;sm=934771" target="_blank" rel="noopener">Beispiel-Seminarplan Mietrecht</a>.</p>
+      <p>Die inhaltlichen Schwerpunkte und Termine findest du in unserem <a href="../public/docs/seminarplan.pdf" target="_blank" rel="noopener">Beispiel-Seminarplan Mietrecht</a>.</p>
     </div>
     <div class="content-block" id="praxis">
       <h2>Praxis</h2>
@@ -60,11 +80,13 @@
         <a href="https://www.instagram.com/mietenlawclinic/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
-        <a href="../footer/barrierefreiheit.html">Barrierefreiheit</a>
-        <a href="../footer/datenschutz.html">Datenschutz</a>
-        <a href="../footer/impressum.html">Impressum</a>
+        <a href="footer/barrierefreiheit.html">Barrierefreiheit</a>
+        <a href="footer/datenschutz.html">Datenschutz</a>
+        <a href="footer/impressum.html">Impressum</a>
       </nav>
     </div>
   </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>

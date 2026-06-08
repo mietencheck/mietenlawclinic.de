@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mitmachen – Mieten Law Clinic</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../style/font.css">
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
-<body>
+<body class="page-mitmachen">
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
   <header class="site-header">
     <div class="site-header-inner">
       <a class="site-logo" href="../index.html">
-        <img src="../public/images/milc-logo-red.svg" alt="Mieten Law Clinic" class="logo-dark" width="88" height="36">
+        <img src="../public/assets/logos/mietenlawclinic-logo.svg" alt="Mieten Law Clinic" class="logo-dark" width="88" height="36">
       </a>
       <nav class="site-nav" aria-label="Hauptnavigation">
         <a href="beratung.html">Beratung</a>
@@ -24,16 +24,38 @@
     </div>
   </header>
 
-  <main class="page" id="inhalt">
-    <div class="rule"></div>
-    <h1>Mitmachen</h1>
-    <nav class="page-nav" aria-label="Seiteninhalt">
-      <a href="#berater" class="page-nav-badge">Berater:in</a>
-      <a href="#foerdermitglied" class="page-nav-badge">Fördermitglied</a>
-      <a href="#vereinsmitglied" class="page-nav-badge">Vereinsmitglied</a>
-      <a href="#spenden" class="page-nav-badge">Spenden</a>
-    </nav>
+  <section class="hero-page" aria-label="Mitmachen im Überblick">
+    <div class="hero-page-inner">
+      <div class="rule"></div>
+      <h1>Mitmachen</h1>
+      <p class="hero-page-lead">Ob als Berater:in, Fördermitglied, im Verein oder mit einer Spende — es gibt viele Wege, unsere Arbeit für faire Mieten in Berlin zu stärken.</p>
 
+      <div class="ways-grid">
+        <a href="#berater" class="ways-card ways-card--berater">
+          <span class="ways-card-number" aria-hidden="true">01</span>
+          <h2 class="ways-card-title">Berater:in werden</h2>
+          <p class="ways-card-text">Mietrecht lernen und Mieter:innen ehrenamtlich beraten.</p>
+        </a>
+        <a href="#foerdermitglied" class="ways-card ways-card--foerder">
+          <span class="ways-card-number" aria-hidden="true">02</span>
+          <h2 class="ways-card-title">Fördermitglied</h2>
+          <p class="ways-card-text">Mit regelmäßigen Beiträgen unsere Arbeit langfristig absichern.</p>
+        </a>
+        <a href="#vereinsmitglied" class="ways-card ways-card--verein">
+          <span class="ways-card-number" aria-hidden="true">03</span>
+          <h2 class="ways-card-title">Vereinsmitglied</h2>
+          <p class="ways-card-text">Social Media, Tech oder Organisation — hinter den Kulissen mitgestalten.</p>
+        </a>
+        <a href="#spenden" class="ways-card ways-card--spenden">
+          <span class="ways-card-number" aria-hidden="true">04</span>
+          <h2 class="ways-card-title">Spenden</h2>
+          <p class="ways-card-text">Einmalig Workshops, Ausbildung und Beratung unterstützen.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="page" id="inhalt">
     <div class="content-block" id="berater">
       <h2>Werde Berater:in</h2>
       <p>Du hast Lust, dich bei uns als Berater:in ausbilden zu lassen und dich ehrenamtlich gegen rechtswidrige Mieten zu engagieren? Das freut uns sehr! Menschen, die sich für mehr Gerechtigkeit auf dem Berliner Wohnungsmarkt einsetzen möchten, sind die Grundlage unserer Arbeit.</p>
@@ -57,9 +79,7 @@
 
     <div class="content-block" id="spenden">
       <h2>Spenden</h2>
-      <p class="section-label">Unterstütze unsere gemeinnützige Arbeit</p>
-      <p>Mit deiner Spende machst du unser Bildungsangebot möglich.</p>
-      <p>Wir bilden neue Berater:innen aus, veranstalten Workshops und Vorträge, um Wissen über mietrechtliche Fragen in die Gesellschaft zu tragen und die Berliner:innen zu informieren.</p>
+      <p>Unterstütze unsere gemeinnützige Arbeit. Mit deiner Spende machst du unser Bildungsangebot möglich. Wir bilden neue Berater:innen aus, veranstalten Workshops und Vorträge, um Wissen über mietrechtliche Fragen in die Gesellschaft zu tragen und die Berliner:innen zu informieren.</p>
       <p>Jede Unterstützung hilft uns weiter.</p>
       <p class="bank">
         Mieten Law Clinic Berlin e.V.<br>
@@ -82,11 +102,13 @@
         <a href="https://www.instagram.com/mietenlawclinic/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
-        <a href="../footer/barrierefreiheit.html">Barrierefreiheit</a>
-        <a href="../footer/datenschutz.html">Datenschutz</a>
-        <a href="../footer/impressum.html">Impressum</a>
+        <a href="footer/barrierefreiheit.html">Barrierefreiheit</a>
+        <a href="footer/datenschutz.html">Datenschutz</a>
+        <a href="footer/impressum.html">Impressum</a>
       </nav>
     </div>
   </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>
