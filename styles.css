@@ -300,35 +300,17 @@ h3 {
   font-weight: 400;
 }
 
-.trust-section {
-  width: 100%;
-  padding: 3.5rem clamp(1.5rem, 4vw, 3rem);
-  background: var(--paper);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.trust-section-inner {
-  width: 80%;
-  max-width: none;
-  margin: 0 auto;
-}
-
-.trust-section-inner h2 {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  color: var(--brand-blue);
-}
-
-.trust-section-logos {
+.content-block-logos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem 4rem;
+  gap: 2rem 3rem;
+  width: 100%;
+  margin-top: 2rem;
 }
 
-.trust-section-logos a {
+.content-block-logos a {
   display: flex;
   flex: 1 1 0;
   min-width: 140px;
@@ -338,16 +320,15 @@ h3 {
   transition: opacity 0.2s;
 }
 
-.trust-section-logos a:hover {
+.content-block-logos a:hover {
   opacity: 0.78;
   text-decoration: none;
 }
 
-.trust-section img {
+.content-block-logos img {
   display: block;
   width: 100%;
-  max-height: 64px;
-  max-width: 100%;
+  max-height: 72px;
   object-fit: contain;
 }
 
