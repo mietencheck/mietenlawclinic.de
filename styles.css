@@ -312,6 +312,15 @@ h3 {
   width: 80%;
   max-width: none;
   margin: 0 auto;
+}
+
+.trust-section-inner h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--brand-blue);
+}
+
+.trust-section-logos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -319,7 +328,7 @@ h3 {
   gap: 2rem 4rem;
 }
 
-.trust-section a {
+.trust-section-logos a {
   display: flex;
   flex: 1 1 0;
   min-width: 140px;
@@ -329,7 +338,7 @@ h3 {
   transition: opacity 0.2s;
 }
 
-.trust-section a:hover {
+.trust-section-logos a:hover {
   opacity: 0.78;
   text-decoration: none;
 }
