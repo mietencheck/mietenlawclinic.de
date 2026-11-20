@@ -1,0 +1,9 @@
+# Publish only the static site.
+/*
+!/index.html
+!/script.js
+!/components/
+!/pages/
+!/public/
+!/style/
+.DS_Store
